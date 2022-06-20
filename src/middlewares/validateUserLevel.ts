@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from 'express';
 const validateUserUserLevel = (req: Request, res: Response, next: NextFunction) => {
   const { level } = req.body;
 
-  if (!level) {
+  if (level === undefined) {
     return res.status(400).json({ message: '"level" is required' });
   }
 
