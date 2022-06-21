@@ -9,7 +9,10 @@ export default class OrderModel {
   }
 
   public async getAll(): Promise<Order[]> {
-    const [orders] = await this.connection.execute('SELECT * FROM Trybesmith.Orders;');
+    const [orders] = await this.connection.execute(`SELECT Orders.id, Orders.userId, Products.id
+    AS productsIds
+    FROM Trybesmith.Orders AS Orders INNER JOIN Trybesmith.Products AS Products
+    ON Products.orderId = Orders.id;`);
     return orders as Order[];
   }
 }
