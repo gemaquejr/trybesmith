@@ -13,4 +13,11 @@ export default class OrderService {
     const orders = await this.orderModel.getAll();
     return orders;
   }
+
+  public create(order: {
+    productsIds: number[],
+    userName: string 
+  }): Promise<{ productsIds: number[], userId: number }> {
+    return this.orderModel.create(order);
+  }
 }

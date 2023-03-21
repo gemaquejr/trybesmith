@@ -14,4 +14,12 @@ export default class OrderController {
     }));
     res.status(200).json(object);
   };
+
+  public create = async (req: Request, res: Response) => {
+    const { productsIds, user } = req.body;
+    const userName = user.name;
+
+    const result = await this.orderService.create({ productsIds, userName });
+    res.status(201).json(result);
+  };
 }
