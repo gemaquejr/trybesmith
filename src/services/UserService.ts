@@ -1,4 +1,4 @@
-import UserModel from '../models/userModel';
+import UserModel from '../models/users.model';
 import User from '../interfaces/Users';
 import connection from '../models/connection';
 
