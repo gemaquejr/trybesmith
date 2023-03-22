@@ -1,18 +1,23 @@
 import { Request, Response } from 'express';
-import UserService from '../services/UserService';
+import UserService from '../services/users.service';
 
 export default class UserController {
-  constructor(private userService = new UserService()) { }
+  private userService: UserService;
 
-  public post = async (req: Request, res: Response) => {
-    const { username, classe, level, password } = req.body;
-    const addUsers = await this.userService.post({ username, classe, level, password });
-    if (!addUsers) {
-      return res.status(400).json({ message: 'Invalid fields' });
-    }
-    const token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
-    eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.
-    SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c`;
-    return res.status(201).json({ token });
+  constructor() {
+    this.userService = new UserService();
+  }
+
+  public getAll = async (_req: Request, res: Response) => {
+    const users = await this.userService.getAll();
+    res.status(200).json(users);
+  };
+
+  public create = async (req: Request, res: Response) => {
+    const user = req.body;
+
+    const createdUserToken = await this.userService.create(user);
+
+    res.status(201).json({ token: createdUserToken });
   };
 }

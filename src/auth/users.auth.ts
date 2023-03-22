@@ -1,5 +1,5 @@
 import { sign, SignOptions } from 'jsonwebtoken';
-import User from '../interfaces/Users';
+import User from '../interfaces/users.interface';
 
 const secret = 'superDuperSecreKey';
 
