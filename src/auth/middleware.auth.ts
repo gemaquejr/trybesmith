@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { verify } from 'jsonwebtoken';
 
-// In Real Project this would be an environment variable
 const secret = 'superDuperSecreKey';
 
 const tokenValidation = (req: Request, res: Response, next: NextFunction) => {
