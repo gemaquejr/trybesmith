@@ -1,18 +1,16 @@
 import { Request, Response } from 'express';
-import OrderService from '../services/OrderService';
+import OrderService from '../services/orders.service';
 
 export default class OrderController {
-  constructor(private orderService = new OrderService()) { }
+  private orderService: OrderService;
+
+  constructor() {
+    this.orderService = new OrderService();
+  }
 
   public getAll = async (_req: Request, res: Response) => {
     const orders = await this.orderService.getAll();
-    // Dica com o Pedrão na mentoria para fazer um map. (Valeu, Pedrão !!!!)
-    const object = orders.map((i) => ({
-      id: i.id,
-      userId: i.userId,
-      productsIds: [i.productsIds],
-    }));
-    res.status(200).json(object);
+    res.status(200).json(orders);
   };
 
   public create = async (req: Request, res: Response) => {
@@ -20,6 +18,7 @@ export default class OrderController {
     const userName = user.name;
 
     const result = await this.orderService.create({ productsIds, userName });
+
     res.status(201).json(result);
   };
 }

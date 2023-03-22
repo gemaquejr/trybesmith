@@ -1,5 +1,5 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
-import Order from '../interfaces/Orders';
+import Order from '../interfaces/orders.interface';
 
 export default class OrderModel {
   public connection: Pool;
@@ -9,11 +9,10 @@ export default class OrderModel {
   }
 
   public async getAll(): Promise<Order[]> {
-    const [orders] = await this.connection.execute(`SELECT Orders.id, Orders.userId, Products.id
-    AS productsIds
-    FROM Trybesmith.Orders AS Orders INNER JOIN Trybesmith.Products AS Products
-    ON Products.orderId = Orders.id;`);
-    return orders as Order[];
+    const result = await this.connection.execute('SELECT * FROM Trybesmith.Orders');
+    const [rows] = result;
+
+    return rows as Order[];
   }
 
   public async getUserIdByUserName(userName: string): Promise<{ id: number }[]> {

@@ -1,5 +1,5 @@
 import ProductModel from './productModel';
 import UserModel from './users.model';
-import OrderModel from './orderModel';
+import OrderModel from './orders.model';
 
 export default { ProductModel, UserModel, OrderModel };
