@@ -1,4 +1,4 @@
-import ProductService from './ProductService';
+import ProductService from './products.service';
 import UserService from './UserService';
 import OrderService from './orders.service';
 

@@ -1,4 +1,4 @@
-import ProductController from './ProductController';
+import ProductController from './products.controller';
 import UserController from './UserController';
 import OrderController from './orders.controller';
 
