@@ -1,6 +1,6 @@
 # Trybesmith
 
-Essa aplicação é uma API RESTful de uma concessionária de veículos em MongoDB e Mongoose.
+Essa aplicação é uma API RESTful de loja de itens medievais, utilizando um banco de dados SQL.
 
 Aplicação que consiste em desenvolver uma API RESTful de gerenciamentos de uma concessionária de veículos, onde é possível cadastrar, visualizar, pesquisar, editar e excluir informações.
 
