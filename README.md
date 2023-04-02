@@ -2,7 +2,7 @@
 
 Essa aplicação é uma API RESTful de loja de itens medievais, utilizando um banco de dados SQL.
 
-Aplicação que consiste em desenvolver uma API RESTful de gerenciamentos de uma concessionária de veículos, onde é possível cadastrar, visualizar, pesquisar, editar e excluir informações.
+Aplicação que consiste em desenvolver uma API RESTful com os princípios REST e seguindo a arquitetura MSC (Model, Service, Controller), aplicando o conceito de classe.
 
 O projeto foi para praticar a construção de API's RESTful em CRUD, utilizando endpoints para ler e escrever arquivos em MongoDB, além do framework Mocha e das bibliotecas Chai e Sinon.JS para criar os testes unitários.
 
