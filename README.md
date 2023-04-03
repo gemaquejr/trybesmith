@@ -12,17 +12,11 @@ O projeto foi para praticar a construção de API's RESTful em CRUD, utilizando 
 
 - ⚡ Node.js é um ambiente de execução JavaScript que permite executar aplicações desenvolvidas com a linguagem de forma autônoma, sem depender de um         navegador.
 
-- ⚡ MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++.
+- ⚡ TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript
 
-- ⚡ Mongoose é uma biblioteca de programação orientada a objetos JavaScript que cria uma conexão entre o MongoDB e o ambiente de tempo de execução           JavaScript Node.js.
+- ⚡ MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.
 
-- ⚡ Mocha é um Framework de teste JavaScript para programas Node.js.
-
-- ⚡ Chai é uma biblioteca de afirmação BDD/TDD para Node e para o navegador, que pode ser equiparada com qualquer framework de testes de JavaScript.
-
-- ⚡ Sinon é uma biblioteca que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os desenvolvimentos de testes no JavaScript.
-
-- ⚡ Jest é uma estrutura de teste de JavaScript construída sobre o Jasmine e mantida pela Meta.
+- ⚡ MySQL Workbench é uma ferramenta de design de banco de dados visual que integra desenvolvimento SQL, administração, design de banco de dados, criação     e manutenção em um único ambiente de desenvolvimento integrado para o sistema de banco de dados MySQL.
 
 ## ✋🏻 Pré-requisitos
 
@@ -32,19 +26,13 @@ O projeto foi para praticar a construção de API's RESTful em CRUD, utilizando 
 
 - [Docker](https://www.docker.com/): Software de código aberto usado para implantar aplicativos dentro de containers virtuais.
 
-- [Node.js](https://nodejs.org/en): Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos   JavaScript fora de um navegador web.
+- [Node.js](https://nodejs.org/en): Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos     JavaScript fora de um navegador web.
 
-- [MongoDB](https://www.mongodb.com/): É uma nova ideia de banco de dados trazendo conceitos de Banco de Dados Orientado a Documentos.
+- [TypeScript](https://www.typescriptlang.org/): TypeScript é um superset do Javascript, ou seja, um conjunto de ferramentas, o TypeScript foi criado com   o objetivo de incluir recursos que não estão presentes no JS. Por meio dele é possível definir a tipagem estática, parâmetros e retorno de funções.
 
-- [Mongoose](https://mongoosejs.com/): É uma biblioteca de Modelagem de Dados de Objeto (ou ODM, do inglês: Object Data Modeling) para MongoDB e Node.js.
+- [MySQL](https://www.mysql.com/): Sistema de gerenciamento de banco de dados (SGBD) relacional, ou seja, que utiliza a linguagem SQL como interface.
 
-- [Mocha](https://mochajs.org/): Mocha é um framework Javascript que roda em aplicações Node.js e no browser para realizar testes assíncronos de uma       maneira simples e fácil.
-
-- [Chai](https://www.chaijs.com/): Chai é uma biblioteca de afirmação BDD/TDD para Node e para o navegador, que pode ser equiparada com qualquer           framework de testes de JavaScript.
-
-- [Sinon](https://sinonjs.org/): Sinon é uma biblioteca que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os                   desenvolvimentos de testes no JavaScript.
-
-- [Jest](https://jestjs.io/pt-BR/): Jest é um framework de testes em JavaScript com um foco na simplicidade.
+- [MySQL Workbench](https://www.mysql.com/products/workbench/): MySQL é uma ferramenta de design de banco de dados visual que integra desenvolvimento       SQL, administração, design de banco de dados, criação e manutenção em um único ambiente de desenvolvimento integrado para o sistema de banco de dados     MySQL.
 
 ## :hammer_and_wrench: Antes de iniciar o projeto.
 
