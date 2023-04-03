@@ -36,17 +36,19 @@ O projeto foi para praticar a construção de API's RESTful em CRUD, utilizando 
 
 ## :hammer_and_wrench: Antes de iniciar o projeto.
 
-### `Obrigatório ter o MongoDB instalado`
+### `Obrigatório ter o MySQL instalado`
 
-- Ter um servidor MongoDB no computador
+- Ter um servidor MySQL no computador
 
-- Ter um cliente MongoDB e conectá-lo ao servidor
+- Ter um cliente MySQL e conectá-lo ao servidor
 
-No diretório do projeto, inicialize o projeto e instale as dependências:
+- Executar as queries do arquivo northwind.sql no cliente MySQL para criar o banco de dados
+
+- Executar as queries dos arquivos iniciados pela palavra desafio no banco criado anteriormente
 
 ### `Rodando a aplicação com o Docker:`
 
-Na pasta app do projeto, suba o container store_manager utilizando o docker-compose.yml. Utilize o comando:
+Na pasta raiz do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
    - `docker-compose up -d`
 
